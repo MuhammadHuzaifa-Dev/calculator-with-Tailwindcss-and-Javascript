@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Calculator App</title>
+  </head>
+  <body class="bg-gray-900 flex justify-center items-center min-h-screen font-[Arial]  ">
+    <div class="bg-gray-800 p-10 rounded-2xl box-border min-w-[350px] sm:max-h-[300px]]">
+      <h1
+        class="text-white text-center text-3xl box-border mb-3 sm:text-4xl"
+      >
+        Calculator App
+      </h1>
+      
+        <input
+          type="text"
+          class="bg-white w-full rounded-lg text-black font-extrabold px-3 py-3 text-end focus:outline-none sm:text-2xl" id="display" value="0"
+        readonly/>
+      
+      <div class="grid grid-cols-4 gap-2 mt-3 ">
+        <button onclick="clearAll()" class="col-span-2 bg-red-600 rounded-md p-4 text-white hover:bg-red-700 font-bold sm:text-2xl">C</button>
+        <button onclick="removeTheLast()" class="bg-gray-400 rounded-md p-4 text-black hover:bg-gray-500 font-extrabold sm:font-extrabold sm:text-2xl">⌫</button>
+        <button onclick="appendToDisplay('/')" class="bg-gray-400 rounded-md p-4 text-black hover:bg-gray-500 font-bold sm:text-2xl">÷</button>
+        <button onclick="appendToDisplay('7')" class="bg-gray-200 rounded-md p-4 text-black hover:bg-gray-400 font-bold sm:text-2xl">7</button>
+        <button onclick="appendToDisplay('8')" class="bg-gray-200 rounded-md p-4 text-black hover:bg-gray-400 font-bold sm:text-2xl">8</button>
+        <button onclick="appendToDisplay('9')" class="bg-gray-200 rounded-md p-4 text-black hover:bg-gray-400 font-bold sm:text-2xl">9</button>
+        <button onclick="appendToDisplay('×')" class="bg-gray-400 rounded-md p-4 text-black hover:bg-gray-500 font-bold sm:text-2xl">×</button>
+        <button onclick="appendToDisplay('4')" class="bg-gray-200 rounded-md p-4 text-black hover:bg-gray-400 font-bold sm:text-2xl">4</button>
+        <button onclick="appendToDisplay('5')" class="bg-gray-200 rounded-md p-4 text-black hover:bg-gray-400 font-bold sm:text-2xl">5</button>
+        <button onclick="appendToDisplay('6')" class="bg-gray-200 rounded-md p-4 text-black hover:bg-gray-400 font-bold sm:text-2xl">6</button>
+        <button onclick="appendToDisplay('-')" class="bg-gray-400 rounded-md p-4 text-black hover:bg-gray-500 font-bold sm:text-2xl">-</button>
+        <button onclick="appendToDisplay('1')" class="bg-gray-200 rounded-md p-4 text-black hover:bg-gray-400 font-bold sm:text-2xl">1</button>
+        <button onclick="appendToDisplay('2')" class="bg-gray-200 rounded-md p-4 text-black hover:bg-gray-400 font-bold sm:text-2xl">2</button>
+        <button onclick="appendToDisplay('3')" class="bg-gray-200 rounded-md p-4 text-black hover:bg-gray-400 font-bold sm:text-2xl">3</button>
+        <button onclick="appendToDisplay('+')" class="bg-gray-400 rounded-md p-4 text-black hover:bg-gray-500 font-bold sm:text-2xl">+</button>
+        <button onclick="appendToDisplay('0')" class="bg-gray-200 rounded-md p-4 text-black hover:bg-gray-400 font-bold sm:text-2xl">0</button>
+        <button onclick="appendToDisplay('.')" class="bg-gray-200 rounded-md p-4 text-black hover:bg-gray-400 font-bold sm:text-2xl">.</button>
+        <button onclick="calculate()" class="col-span-2 bg-blue-800 rounded-md p-4 text-white hover:bg-blue-900 font-bold sm:text-2xl">=</button>
+        
+      </div>
+    </div>
+  </body>
+  <script src="script.js">
+  </script>
+</html>
